@@ -5,7 +5,10 @@
   - [`Delcaring Variables`](#delcaring-variables)
   - [`Type Annotations`](#type-annotations)
   - [`Naming Constants and Variables`](#naming-constants-and-variables)
-
+  - [`Print`](#print)
+  - [`Comments`](#comments)
+  - [`Semicolons`](#semicolons)
+  - [`Semicolons`](#semicolons)
   
 
 #### Basic
@@ -55,4 +58,36 @@ Constant and variable names can contain almost any character, including Unicode 
 let π = 3.14159
 let 你好 = "你好世界"
 let 🐶🐮 = "dogcow"
+```
+
+#### Print
+It's always useful to print your variable when you tired of debugging
+
+```swift
+var name = "some name"
+print(name)
+
+// Printing a variable with string
+print("Hi \(name)")
+// also we can use
+print("hi", name)
+```
+
+#### Comments
+Use comments to include nonexecutable text in your code, as a note or reminder to yourself. Comments are ignored by the Swift compiler when your code is compiled.
+
+```swift
+// single line comment
+
+/* 
+Multi line
+Comments
+*/
+```
+
+#### Semicolons
+Unlike many other languages, Swift doesn’t require you to write a semicolon (;) after each statement in your code, although you can do so if you wish. However, semicolons are required if you want to write multiple separate statements on a single line:
+
+```swift
+var name = "some name"; print(name);
 ```
